@@ -20,6 +20,7 @@ public class ForestAnimals : AudioEvent
 
     public override void Play(AudioSource source)
     {
+        source.outputAudioMixerGroup = bus;
         RandomizePitchAndVolume(source);
         source.spatialize = true;
         source.clip = PickAClip();

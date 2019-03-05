@@ -10,7 +10,7 @@ public class AudioManager : MonoBehaviour
 
     private AudioSource ambiance2DSource;
     //State
-    private enum location
+    public enum location
     { 
         village,
         forest
@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
         //Zone Init
         zoneClass forestZone = new zoneClass();
         zoneClass villageZone = new zoneClass();
-        playerGO = GameObject.Find("Player");
+        playerGO = GameObject.Find("Camera");
         villageZone.zoneGameObject = GameObject.Find("VillageAudioZone");
         villageZone.zoneRenderer = villageZone.zoneGameObject.GetComponent<Renderer>();
         villageZone.ambianceAudio = Resources.Load<Ambiance>("Audio/SFX/Amb/Village");
@@ -91,25 +91,27 @@ public class AudioManager : MonoBehaviour
             spatialRandomizerSources.Enqueue(forestAnimal);
         }
 
+        List<ForestAnimals> allForestAnimals = new List<ForestAnimals>();
         foreach (ForestAnimals sfx in Resources.LoadAll<ForestAnimals>("Audio/SFX/ForestAnimals"))
         {
             sfx.Init();
-            List<ForestAnimals> allForestAnimals = new List<ForestAnimals>();
             allForestAnimals.Add(sfx);
-            soundsBasedOnLocation.Add(location.forest, allForestAnimals);
         }
+        soundsBasedOnLocation.Add(location.forest, allForestAnimals);
+
+        List<ForestAnimals> allVillageRandoms = new List<ForestAnimals>();
         foreach (ForestAnimals sfx in Resources.LoadAll<ForestAnimals>("Audio/SFX/VillageRandom"))
         {
             sfx.Init();
-            List<ForestAnimals> allVillageRandoms = new List<ForestAnimals>();
             allVillageRandoms.Add(sfx);
-            soundsBasedOnLocation.Add(location.village, allVillageRandoms);
         }
+        soundsBasedOnLocation.Add(location.village, allVillageRandoms);
 
     }
 
     private void AudioStart ()
     {
+        allZones[currentLocation].ambianceAudio.Play(allZones[currentLocation].sourceForAmbiance);
         StartCoroutine(StartSpatializedAmbiance());
     }
 
@@ -244,6 +246,10 @@ public class AudioManager : MonoBehaviour
     private void Update()
     {
         UpdateClosestZone();
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            Resources.Load<Ambiance>("Audio/SFX/Amb/Forest").Play(gameObject.AddComponent<AudioSource>());
+        }
     }
 
     private void UpdateClosestZone()
@@ -282,6 +288,7 @@ public class AudioManager : MonoBehaviour
             return;
         }
     }
+
 
     public void CurrentLocation_Forest ()
     {

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d14c4ea5d453234e822832e02da4f88, type: 3}
+  m_Name: Insects
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3748f7dc76c5a6242809caff5de013b1, type: 3}
+  - {fileID: 8300000, guid: 111374983338fa742bbb5fb45ccfa37e, type: 3}
+  - {fileID: 8300000, guid: 1ff2d450aecbf2f4193093ad61bac485, type: 3}
+  - {fileID: 8300000, guid: 692e8383290621d44ade3558996a3588, type: 3}
+  - {fileID: 8300000, guid: ff0ee8c7d057ea64a8cf0122a26a36b2, type: 3}
+  - {fileID: 8300000, guid: 03c8b774ae81aeb4586a79d9cd8e302d, type: 3}
+  noRepeat: 2
+  pitchRange:
+    minValue: 0.8333333
+    maxValue: 1
+  volumeRange:
+    minValue: 0.45833334
+    maxValue: 1
+  bus: {fileID: 243861531860260192, guid: fe2a2fe77adcaa045a5c723c5041ff26, type: 2}

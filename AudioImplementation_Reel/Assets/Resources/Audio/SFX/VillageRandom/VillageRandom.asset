@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d14c4ea5d453234e822832e02da4f88, type: 3}
+  m_Name: VillageRandom
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 394fb3e1ef5dc4b46879a3ec0da42e13, type: 3}
+  - {fileID: 8300000, guid: bbf231dd474835a459908e0eb8fb6935, type: 3}
+  - {fileID: 8300000, guid: cf38768a5d960324a9afda26ceb74c3d, type: 3}
+  - {fileID: 8300000, guid: c72a736b4aaf00a46a0a8e6c33d0febc, type: 3}
+  - {fileID: 8300000, guid: 767be16691f932b4ca9485ec79d5c21e, type: 3}
+  - {fileID: 8300000, guid: 02b77b5f64c7ebf47a33b277d55e8af6, type: 3}
+  - {fileID: 8300000, guid: ada052d28d996f1459b28c68a82c03e2, type: 3}
+  - {fileID: 8300000, guid: 0f11ec06b494aa44491f60ae87a171df, type: 3}
+  noRepeat: 2
+  pitchRange:
+    minValue: 0.75
+    maxValue: 1
+  volumeRange:
+    minValue: 0.47916666
+    maxValue: 1
+  bus: {fileID: 243861531860260192, guid: fe2a2fe77adcaa045a5c723c5041ff26, type: 2}

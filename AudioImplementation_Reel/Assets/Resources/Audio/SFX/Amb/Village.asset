@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63174e27a8aab495e88394b216025045, type: 3}
+  m_Script: {fileID: 11500000, guid: 0042b9e632c158148a092b59616ebcdb, type: 3}
   m_Name: Village
   m_EditorClassIdentifier: 
-  ambiance: {fileID: 0}
+  ambiance: {fileID: 8300000, guid: aa2ffef085da2354e83780564a1abace, type: 3}
+  bus: {fileID: 243901908256806146, guid: fe2a2fe77adcaa045a5c723c5041ff26, type: 2}

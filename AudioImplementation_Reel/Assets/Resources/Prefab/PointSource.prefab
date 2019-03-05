@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3747740277297865249}
   - component: {fileID: 3747740277297865261}
   - component: {fileID: 2533986805350904473}
-  - component: {fileID: 29741491449970007}
+  - component: {fileID: 3043727107641339145}
   m_Layer: 0
   m_Name: PointSource
   m_TagString: Untagged
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 875763c13b517463a911762ade2837d5, type: 2}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,7 +260,7 @@ AudioLowPassFilter:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &29741491449970007
+--- !u!114 &3043727107641339145
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,6 +269,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 3747740277297865250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b72bb608f3fa34db593b9f3c792101a1, type: 3}
+  m_Script: {fileID: 11500000, guid: 59b045f21bfeb9240ab658ce559f826b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

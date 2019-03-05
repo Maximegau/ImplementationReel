@@ -9,16 +9,42 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5048bdffa196747c1918c2506e6ce258, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d14c4ea5d453234e822832e02da4f88, type: 3}
   m_Name: Birds
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 9ffd5fe10996f48f9b69103621c4dc7d, type: 3}
-  noRepeat: 0
+  - {fileID: 8300000, guid: ee4c75c5c340e8b4d8c3be1055c98e1b, type: 3}
+  - {fileID: 8300000, guid: 4bfab91ac233357418e58074b23e1c93, type: 3}
+  - {fileID: 8300000, guid: 22dfb03f6964f0c48b9937bedc132100, type: 3}
+  - {fileID: 8300000, guid: f9970e8016166124f95f8634da1aa04e, type: 3}
+  - {fileID: 8300000, guid: bbf231dd474835a459908e0eb8fb6935, type: 3}
+  - {fileID: 8300000, guid: cb5bf8ff124e2914c983f279a6afa448, type: 3}
+  - {fileID: 8300000, guid: 33538071cf0322b4c8a1558b1d817526, type: 3}
+  - {fileID: 8300000, guid: 218ae1dab5b5d6041a85d1a4edcdff28, type: 3}
+  - {fileID: 8300000, guid: f029ea5111201064bbdb34e04b9a6466, type: 3}
+  - {fileID: 8300000, guid: 953f5bc2c911c93499b657f6aa97c7a1, type: 3}
+  - {fileID: 8300000, guid: e6742f5c719fa374f96b56eadc6441ab, type: 3}
+  - {fileID: 8300000, guid: 5177faae2affb1d4a9d08d577b830f8c, type: 3}
+  - {fileID: 8300000, guid: f58872256f74588449f52ea453a08790, type: 3}
+  - {fileID: 8300000, guid: ada052d28d996f1459b28c68a82c03e2, type: 3}
+  - {fileID: 8300000, guid: 478f30c3ba291a8468640dfaaa439ec1, type: 3}
+  - {fileID: 8300000, guid: 008e6efd66584594f944630c9a722ded, type: 3}
+  - {fileID: 8300000, guid: c72a736b4aaf00a46a0a8e6c33d0febc, type: 3}
+  - {fileID: 8300000, guid: 4dbc24d9f1c8ebc4c9ba9c1bf1bbe946, type: 3}
+  - {fileID: 8300000, guid: 0f11ec06b494aa44491f60ae87a171df, type: 3}
+  - {fileID: 8300000, guid: cf38768a5d960324a9afda26ceb74c3d, type: 3}
+  - {fileID: 8300000, guid: 394fb3e1ef5dc4b46879a3ec0da42e13, type: 3}
+  - {fileID: 8300000, guid: 40af9f6e08377e648b504faa551e6808, type: 3}
+  - {fileID: 8300000, guid: a7276c3ed30818b43b15ba35e430a2a2, type: 3}
+  - {fileID: 8300000, guid: 51da8c7a4216d4f43b8cf7b0452eeb27, type: 3}
+  - {fileID: 8300000, guid: 49a5786275e97cd47a8fc0d2aa29ecf3, type: 3}
+  - {fileID: 8300000, guid: 02b77b5f64c7ebf47a33b277d55e8af6, type: 3}
+  - {fileID: 8300000, guid: 767be16691f932b4ca9485ec79d5c21e, type: 3}
+  noRepeat: 2
   pitchRange:
-    minValue: 0.6666667
+    minValue: 0.779661
     maxValue: 1
   volumeRange:
-    minValue: 0.6875
+    minValue: 0.40677965
     maxValue: 1
-  bus: {fileID: 0}
+  bus: {fileID: 243861531860260192, guid: fe2a2fe77adcaa045a5c723c5041ff26, type: 2}
