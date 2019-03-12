@@ -181,6 +181,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62f4b89cc8758a742bdb44a744629672, type: 3}
+--- !u!1 &73961544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 251307283, guid: 62f4b89cc8758a742bdb44a744629672,
+    type: 3}
+  m_PrefabInstance: {fileID: 73045835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &73961546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73961544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79e99846fd75c4438917229c144155a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TerrainSimplificationLevel: 0
+  exportAllChildren: 1
 --- !u!1 &480422926
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +245,7 @@ GameObject:
   - component: {fileID: 537845202}
   - component: {fileID: 537845201}
   - component: {fileID: 537845200}
+  - component: {fileID: 537845206}
   m_Layer: 0
   m_Name: houseLow (1)
   m_TagString: Untagged
@@ -467,6 +488,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+--- !u!169 &537845206
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537845199}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.22727273
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!21 &625324003
 Material:
   serializedVersion: 6
@@ -788,6 +834,7 @@ GameObject:
   - component: {fileID: 679404435}
   - component: {fileID: 679404434}
   - component: {fileID: 679404433}
+  - component: {fileID: 679404439}
   m_Layer: 0
   m_Name: houseLow
   m_TagString: Untagged
@@ -1030,6 +1077,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 180.00002, z: 0}
+--- !u!169 &679404439
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 679404432}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.22727273
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &730639997
 GameObject:
   m_ObjectHideFlags: 0
@@ -2994,6 +3066,26 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1263294603}
   m_Enabled: 1
+--- !u!1 &1441512497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1740804768, guid: 62f4b89cc8758a742bdb44a744629672,
+    type: 3}
+  m_PrefabInstance: {fileID: 73045835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1441512499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1441512497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79e99846fd75c4438917229c144155a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TerrainSimplificationLevel: 0
+  exportAllChildren: 1
 --- !u!1 &1658101944
 GameObject:
   m_ObjectHideFlags: 0
@@ -3509,6 +3601,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014254142504, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.19
@@ -3576,10 +3672,6 @@ PrefabInstance:
     - target: {fileID: 4000013889601590, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.45
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000014254142504, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_TagString
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
