@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.audioimplementation_reel.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\JoyceStick\\Documents\\Maxime\\_School\\ImplementationReel\\AudioImplementation_Reel\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "AudioImplementation_Reel [Testing]"
+        }
+      }
+    }
+  ]
+}

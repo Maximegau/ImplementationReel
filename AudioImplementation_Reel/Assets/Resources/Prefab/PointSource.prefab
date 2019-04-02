@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 3747740277297865248}
   - component: {fileID: 3747740277297865249}
   - component: {fileID: 3747740277297865261}
+  - component: {fileID: 1403241654338587280}
   - component: {fileID: 2533986805350904473}
-  - component: {fileID: 3043727107641339145}
+  - component: {fileID: 1495999762111612355}
   m_Layer: 0
   m_Name: PointSource
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: f2997fa8fe5287743a7d73c3e13401c6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,7 +104,8 @@ AudioSource:
   m_GameObject: {fileID: 3747740277297865250}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243861531860260192, guid: 82f3aaea1aabce9489e1035cf308493d,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -235,6 +237,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1403241654338587280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3747740277297865250}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 671a03b01d107534b813005ce5ce9801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!169 &2533986805350904473
 AudioLowPassFilter:
   m_ObjectHideFlags: 0
@@ -242,7 +256,7 @@ AudioLowPassFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3747740277297865250}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_LowpassResonanceQ: 1
   lowpassLevelCustomCurve:
@@ -260,7 +274,7 @@ AudioLowPassFilter:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3043727107641339145
+--- !u!114 &1495999762111612355
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -269,6 +283,35 @@ MonoBehaviour:
   m_GameObject: {fileID: 3747740277297865250}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59b045f21bfeb9240ab658ce559f826b, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b4d991f2c142aa4e83f0d680232c451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  directBinaural: 1
+  interpolation: 0
+  physicsBasedAttenuation: 1
+  airAbsorption: 1
+  dipoleWeight: 0
+  dipolePower: 0
+  occlusionMode: 0
+  occlusionMethod: 0
+  sourceRadius: 1
+  directMixLevel: 1
+  reflections: 1
+  indirectBinaural: 0
+  indirectMixLevel: 1
+  simulationType: 0
+  uniqueIdentifier: 
+  avoidSilenceDuringInit: 0
+  overrideHRTFIndex: 0
+  hrtfIndex: 0
+  bakingRadius: 16
+  useAllProbeBoxes: 0
+  probeBoxes: []
+  bakedProbeNames: []
+  bakedProbeDataSizes: 
+  bakedDataSize: 0
+  bakedStatsFoldout: 0
+  bakeToggle: 0
+  bakedDataIdentifier:
+    identifier: 0
+    type: 0

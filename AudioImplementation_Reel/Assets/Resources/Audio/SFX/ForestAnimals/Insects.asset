@@ -9,21 +9,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d14c4ea5d453234e822832e02da4f88, type: 3}
+  m_Script: {fileID: 11500000, guid: 856bb7cbc9f4bdc4d9de849161f143a3, type: 3}
   m_Name: Insects
   m_EditorClassIdentifier: 
   clips:
-  - {fileID: 8300000, guid: 3748f7dc76c5a6242809caff5de013b1, type: 3}
-  - {fileID: 8300000, guid: 111374983338fa742bbb5fb45ccfa37e, type: 3}
-  - {fileID: 8300000, guid: 1ff2d450aecbf2f4193093ad61bac485, type: 3}
-  - {fileID: 8300000, guid: 692e8383290621d44ade3558996a3588, type: 3}
-  - {fileID: 8300000, guid: ff0ee8c7d057ea64a8cf0122a26a36b2, type: 3}
-  - {fileID: 8300000, guid: 03c8b774ae81aeb4586a79d9cd8e302d, type: 3}
-  noRepeat: 2
+  - {fileID: 8300000, guid: f5b9fbd2d3b2ca0438e3c4ef38d2067e, type: 3}
+  - {fileID: 8300000, guid: 86df96b254db78b44a9fa41058df0bc4, type: 3}
+  - {fileID: 8300000, guid: 0441c1204d7806b44882dcad1c320c0f, type: 3}
+  - {fileID: 8300000, guid: 27144716fed9bb745be300de375ae674, type: 3}
+  - {fileID: 8300000, guid: 4bcde97d57ee2354caf725cb8db5e56a, type: 3}
+  - {fileID: 8300000, guid: 58e7d672a145ede4dba2a1c7253b9482, type: 3}
+  noRepeat: 1
   pitchRange:
-    minValue: 0.8333333
+    minValue: 0.98543537
     maxValue: 1
   volumeRange:
-    minValue: 0.45833334
+    minValue: 0.9110629
     maxValue: 1
-  bus: {fileID: 243861531860260192, guid: fe2a2fe77adcaa045a5c723c5041ff26, type: 2}
+  bus: {fileID: 243861531860260192, guid: 82f3aaea1aabce9489e1035cf308493d, type: 2}

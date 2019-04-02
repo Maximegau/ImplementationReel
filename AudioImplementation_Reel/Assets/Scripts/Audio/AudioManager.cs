@@ -23,7 +23,7 @@ public class AudioManager : MonoBehaviour
         forge
     }
 
-    private location currentLocation = location.village;
+    private location currentLocation = location.forest;
     //Ambiance Zones
     private class zoneClass
     {
@@ -65,7 +65,7 @@ public class AudioManager : MonoBehaviour
         //Zone Init
         zoneClass forestZone = new zoneClass();
         zoneClass villageZone = new zoneClass();
-        playerGO = GameObject.Find("Camera");
+        playerGO = GameObject.Find("VRCamera");
         villageZone.zoneGameObject = GameObject.Find("VillageAudioZone");
         villageZone.zoneRenderer = villageZone.zoneGameObject.GetComponent<Renderer>();
         villageZone.ambianceAudio = Resources.Load<Ambiance>("Audio/SFX/Amb/Village");
@@ -113,6 +113,8 @@ public class AudioManager : MonoBehaviour
     {
         allZones[currentLocation].ambianceAudio.Play(allZones[currentLocation].sourceForAmbiance);
         StartCoroutine(StartSpatializedAmbiance());
+        StartCoroutine(StartSpatializedAmbiance());
+        StartCoroutine(StartSpatializedAmbiance());
     }
 
     private IEnumerator StartSpatializedAmbiance()
@@ -120,8 +122,9 @@ public class AudioManager : MonoBehaviour
         RandomizerGameObjects tempSource = spatialRandomizerSources.Dequeue();
         spatialRandomizerSources.Enqueue(tempSource);
 
-        yield return new WaitForSecondsRealtime(Random.Range(0, 5));
+        yield return new WaitForSecondsRealtime(Random.Range(0, 8));
         tempSource.gameObjectOfFAS.transform.position = RandomizePositionAroundPlayer();
+        print(soundsBasedOnLocation[currentLocation] + "current location = " + currentLocation);
         soundsBasedOnLocation[currentLocation][Random.Range(0, soundsBasedOnLocation[currentLocation].Count)].Play(tempSource.source);
         StartCoroutine(StartSpatializedAmbiance());
     }

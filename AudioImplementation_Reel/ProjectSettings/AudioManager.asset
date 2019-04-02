@@ -12,6 +12,6 @@ AudioManager:
   m_VirtualVoiceCount: 512
   m_RealVoiceCount: 32
   m_SpatializerPlugin: Steam Audio Spatializer
-  m_AmbisonicDecoderPlugin: Resonance Audio
+  m_AmbisonicDecoderPlugin: OculusSpatializer
   m_DisableAudio: 0
   m_VirtualizeEffects: 1

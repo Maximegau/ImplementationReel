@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0042b9e632c158148a092b59616ebcdb, type: 3}
+  m_Script: {fileID: 11500000, guid: 1faa190e48ff0a34c963261aa084dd23, type: 3}
   m_Name: Forest
   m_EditorClassIdentifier: 
-  ambiance: {fileID: 8300000, guid: 2be9c2c463b0aac4f8cd6817d1349797, type: 3}
-  bus: {fileID: 243901908256806146, guid: fe2a2fe77adcaa045a5c723c5041ff26, type: 2}
+  ambiance: {fileID: 8300000, guid: d126c172815d6af43ada06f59da24a87, type: 3}
+  bus: {fileID: 243378818911124866, guid: 82f3aaea1aabce9489e1035cf308493d, type: 2}
